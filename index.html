@@ -48,15 +48,39 @@
 <!-- ---------------------MODAL window--------------- -->
       <div class="backgrop is-hidden" data-backdrop>
       <div class="modal">
-        <p>
-        </p>
         <button class="modal-close-button" data-close-modal>
-          <svg class="modal-icon" width="30" height="30">
+          <svg class="modal-icon" width="14" height="14">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="">
+          <h2 class="modal-form-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="modal-form-field">
+            <label for="name" class="modal-form-label">Имя</label>
+            <input type="text" name="name" id="name"/>
+          </div>
+          <div class="modal-form-field">
+            <label for="tel" class="modal-form-label">Телефон</label>
+            <input type="text" name="tel" id="tel" />
+          </div>
+          <div class="modal-form-field">
+            <label for="email" class="modal-form-label">Почта</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="modal-form-field">
+          <label for="comment" class="modal-form-label">Комментарий</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <label for="">
+              <input type="checkbox" />
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+          </div>
+          <button class="icon-button" type="submit">Подписаться</button>
+        </form>
       </div>
     </div>
+<!-- --------------------END of Modal wondow------------------ -->
 
     <!--Наши преимущества-->
     <section class="section">
@@ -338,46 +362,55 @@
   <footer>
     <div class="container footer-wrap">
       <div class="footer-column">
-      <a class="logo" href="./index.html">Web<span class="logostudiobottom">Studio</span></a>
-      <address class="address-footer">
-        г. Киев, пр-т Леси Украинки, 26
-      </address>
-      <a class="contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="logo" href="./index.html">Web<span class="logostudiobottom">Studio</span></a>
+        <address class="address-footer">
+          г. Киев, пр-т Леси Украинки, 26
+        </address>
+        <a class="contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="contacts-footer" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
       <div class="footer-column">
-      <h2 class="join-title-footer">Присоединяйтесь</h2>
-      <ul class="list-gen-setting footer-contacts">
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="">
-            <svg class="footer-icon" width="20px" height="20px">
-              <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="">
-            <svg class="footer-icon" width="20px" height="16.25px">
-              <use href="./images/symbol-defs.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="">
-            <svg class="footer-icon" width="10px" height="20px">
-              <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="">
-            <svg class="footer-icon" width="20px" height="20px">
-              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+        <h2 class="join-title-footer">Присоединяйтесь</h2>
+        <ul class="list-gen-setting footer-contacts">
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-link" href="">
+              <svg class="footer-icon" width="20px" height="20px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-link" href="">
+              <svg class="footer-icon" width="20px" height="16.25px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-link" href="">
+              <svg class="footer-icon" width="10px" height="20px">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-link" href="">
+              <svg class="footer-icon" width="20px" height="20px">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <form class="footer-form">
+        <label class="footer-email-label">
+          <span class="footer-email-call">Подпишитесь на рассылку</span>
+          <input type="email" name="subscribe-email" placeholder="E-mail" class="footer-email-input" />
+        </label>
+        <button class="icon-button" type="submit">Подписаться</button>
+      </form>
+    
     </div>
   </footer>
   <script>
