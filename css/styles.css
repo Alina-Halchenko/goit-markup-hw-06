@@ -196,6 +196,7 @@ input {
 }
 .backgrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -343,7 +344,14 @@ input {
   display: block;
   width: 16px;
   height: 15px;
-  background-image: url('../images/symbol-defs.svg#icon-check');
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+}
+.modal-checkbox-input:checked + .modal-checkbox-icon {
+  background-color: #2196F3;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  background-image: url('../images/icon-check.svg');
 }
 .modal-checkbox-label {
   font-weight: 400;
