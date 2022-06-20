@@ -234,6 +234,9 @@ input {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: flex;
+  justify-items: center;
+
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -241,6 +244,10 @@ input {
   margin: 0;
   width: 30px;
   height: 30px;
+}
+
+.modal-close-button:active {
+  border: 1px solid var(--accent-color);
 }
 
 .modal-form-header {
@@ -363,11 +370,17 @@ input {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-left: 8px;
+
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .modal-checkbox-link {
   font-family: inherit;
   color: var(--accent-color);
+  margin: 0;
+  padding: 0;
 }
 
 /* -------------------------------------end Modal window---------- */
@@ -771,6 +784,7 @@ footer {
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 16px;
+  color: #ffffff;
 }
 .footer-email-input::placeholder {
   font-weight: 400;
